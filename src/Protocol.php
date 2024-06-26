@@ -3,7 +3,7 @@
 namespace xpocketmc\xpocketmprotocols;
 
 class Protocol {
-    const CURRENT_PROTOCOL = 575;
+    const CURRENT_PROTOCOL = 685;
     const MINECRAFT_VERSION = "1.21.0";
 
     public static function getCurrentProtocol() : int {
