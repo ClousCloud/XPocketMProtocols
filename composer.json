@@ -3,7 +3,7 @@
     "type": "library",
     "require-dev": {
         "php": "^8.1",
-        "pocketmine/nbt": "^1.0.0"
+        "pocketmine/nbt": "^1.0.0",
         "phpstan/phpstan": "^1.11.3",
         "friendsofphp/php-cs-fixer": "^3.0"
     },
