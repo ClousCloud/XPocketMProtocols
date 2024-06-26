@@ -24,6 +24,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
+      - name: Install Dependencies
+        run: composer install
+
       - name: Run php-cs-fixer
         run: vendor/bin/php-cs-fixer fix
   XPocketMProtocol:
