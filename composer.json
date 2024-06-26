@@ -6,7 +6,7 @@
         "pocketmine/nbt": "^1.0.0",
         "phpstan/phpstan-strict-rules": "^1.6.0",
         "phpstan/phpstan": "^1.11.5",
-        "friendsofphp/php-cs-fixer": "^3.0"
+        "friendsofphp/php-cs-fixer": "^3.59.3"
     },
     "license": "lgpl-3.0-only",
     "autoload": {
