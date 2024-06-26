@@ -3,8 +3,8 @@
 namespace xpocketmc\xpocketmprotocols;
 
 class Minecraft {
-    private $version;
-    private $protocol;
+    private string $version;
+    private int $protocol;
 
     public function __construct(string $version, int $protocol) {
         $this->version = $version;
@@ -19,11 +19,11 @@ class Minecraft {
         return $this->protocol;
     }
 
-    public function setVersion(string $version) {
+    public function setVersion(string $version): void {
         $this->version = $version;
     }
 
-    public function setProtocol(int $protocol) {
+    public function setProtocol(int $protocol): void {
         $this->protocol = $protocol;
     }
 
@@ -39,7 +39,7 @@ class Minecraft {
         return Protocol::isValidProtocol($this->protocol) && Protocol::isValidMinecraftVersion($this->version);
     }
 
-    public function updateVersionAndProtocol(string $version, int $protocol) {
+    public function updateVersionAndProtocol(string $version, int $protocol): void {
         $this->setVersion($version);
         $this->setProtocol($protocol);
     }
