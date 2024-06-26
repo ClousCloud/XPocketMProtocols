@@ -22,14 +22,25 @@ class Protocol {
         return $version === self::MINECRAFT_VERSION;
     }
 
+    /**
+     * @param array<mixed> $data
+     * @return array<mixed>
+     */
     public static function parseData(array $data) : array {
         return $data;
     }
 
+    /**
+     * @param array<mixed> $data
+     * @return array<mixed>
+     */
     public static function createPacket(array $data) : array {
         return $data;
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public static function getProtocolInfo() : array {
         return [
             'protocol' => self::CURRENT_PROTOCOL,
